@@ -1,0 +1,153 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+router-outlet {
+  position: absolute;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding: 0 1rem;
+  background-color: #0f172a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f8fafc;
+  transition: color 0.2s ease;
+}
+
+.logo-link:hover {
+  color: #facc15;
+}
+
+.logo-link svg {
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.logo-link:hover svg {
+  transform: scale(1.1);
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #1e293b;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navigation a {
+  padding: 0.5rem 1rem;
+  color: #f8fafc;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  background-color: transparent;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navigation a:hover {
+  background-color: #334155;
+  color: #facc15;
+}
+
+.main-content {
+  padding: 2rem 1rem;
+  background-color: #f9fafb;
+  min-height: calc(100vh - 56px - 64px);
+}
+
+.home-page {
+  padding: 2rem 1rem;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f9fafb;
+  color: #0f172a;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #334155;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.lesson-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: #f9fafb;
+  color: #0f172a;
+}
+
+.module-header {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.module-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.version {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #facc15;
+  margin-left: 0.5rem;
+}
+
+.module-description {
+  margin-top: 0.5rem;
+  color: #475569;
+  font-size: 1rem;
+}
+
+.lesson-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.lesson-details {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1rem;
+  color: #334155;
+}
+
+.lesson-details li {
+  margin-bottom: 0.5rem;
+}
